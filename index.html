@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform </p>
+    <hr />
+    <form id="survey-form">
+      <label id="name-label">Name<input id="name" type="text" placeholder="Enter your name" required />
+      </label>
+      <label id="email-label" >Email<input id="email" type="email" placeholder="Enter your Email"required />
+      </label>
+     <label id="number-label" > Age (optional)<input id="number" type="number" min="13" max="120" placeholder="Age" />
+     </label>
+     Which option best describes your current role?<select id="dropdown">
+       <option selected>Select current role</option>
+       <option>Student</option>
+       <option>Full time Job</option>
+       <option>Full time Learner</option>
+       <option>Prefer not to say</option>
+       <option>Other</option>
+       </select>
+<label>Would you recommend freeCodeCamp to a friend?</label>
+<input type="radio" name="radio" value ="radio"checked />Definitely
+<input type="radio" name="radio" value="radio" />Maybe
+<input type="radio" name="radio" value="radio" />Not sure
+<label>What would you like to see improved? (Check all that apply)</label>
+<input type="checkbox" value="choice1"/> Front-end Projects
+<input type="checkbox" value="choice2"/> Back-end Projects
+<input type="checkbox" value="choice3"/> Data Visualization
+<input type="checkbox" value="choice4"/> Challenges
+<input type="checkbox" value="choice5"/> Open Source Community
+<input type="checkbox" value="choice6"/> Gitter Help Rooms
+<input type="checkbox" value="choice7"/> Videos
+<input type="checkbox" value="choice8"/> City Meetups
+<input type="checkbox" value="choice9"/> Wiki
+<input type="checkbox" value="choice10"/> Forum
+<input type="checkbox" value="choice11"/> Additional Courses
+
+<label>Any comments or suggestions?</label>
+<textarea></textarea>
+<button id="submit">Submit</button>
+</form>
+</body>
+</html>
+
