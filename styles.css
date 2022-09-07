@@ -1,0 +1,38 @@
+#title, #description {
+  text-align:center;
+  color:#FFFFFF;
+}
+header {
+  background-color:#0A0A23;
+}
+body {
+  background-color:#0A0A23;
+  color:#FFFFFF;
+}
+hr {
+  margin:auto;
+  width:20%; 
+}
+#survey-form {
+  padding:70px 0;
+  background-color:#2A2A40;
+}
+textarea {
+  resize:none;
+  width:100%;
+  max-width:900px;
+}
+
+br
+{   content: "A" !important;
+    display: block !important;
+    margin-bottom: 1.5em !important;
+}
+
+.radio, .checkbox {
+  padding:0;
+  margin:0;
+}
+
+
+
