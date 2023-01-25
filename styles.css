@@ -1,0 +1,116 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Norse Bold" ;
+  src: url(assets/Norse-Bold.otf);
+}
+body {
+  background-image: url(assets/ducky-duck.jpg);
+  font-family: 'Hack', monospace;
+  line-height: 1.5;
+  width: 100%;
+  min-height: 100%;
+}
+.text-section {
+  background-color: white;
+  max-width: calc(100vw - 40%);
+  margin:2rem auto;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+.logo-section {
+  display:flex;
+  justify-content: center;
+  background-color:rgba(0, 0, 0, .40);
+}
+
+.logo-section > p {
+  color:whitesmoke;
+  font-size:3rem;
+  font-family: 'Norse Bold', sans-serif;
+  margin-top:1.11rem;
+}
+.logo {
+  width:100px;
+  height:100px;
+}
+
+
+form {
+  display:grid;
+  grid-template-columns: repeat(2,200px);
+  gap:2rem;
+  margin-left:2rem;
+}
+
+button {
+    background-color: rgba(24, 153, 214, .50);
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  button :hover {
+    background-color: rgba(24, 153, 214, .9);
+  }
+
+  .acc-text {
+    text-align: center;
+    padding-top: .8rem;
+    padding-bottom: 1.5rem;
+  }
+
+  a:visited {
+    color:rgba(24, 153, 214, .20);
+  }
+  a:link {
+    color:black;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: rgb(24, 153, 214);
+  }
+
+  .image-source {
+    text-align: center;
+    margin-top:2rem;
+  }
+
+.introduction-text > p {
+  text-align: center;
+  padding-top: 2rem;
+}
+.text-text {
+  text-align: left;
+  margin-bottom:1.5rem;
+}
