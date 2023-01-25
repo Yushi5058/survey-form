@@ -1,74 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Survey Form</title>
-    <link rel="stylesheet" href="styles.css" />
-    </head>
-  <body>
-    <header>
-    <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform </p>
-    </header>
-    <hr />
-    <form id="survey-form">
-      <label id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required />
-      </label>
-      <br/>
-      <label id="email-label" >Email <input id="email" type="email" placeholder="Enter your Email"required />
-      </label>
-      <br />
-     <label id="number-label" > Age (optional) <input id="number" type="number" min="13" max="120" placeholder="Age" />
-     </label>
-      <br />
-     Which option best describes your current role? <select id="dropdown">
-       <option selected>Select current role</option>
-       <option>Student</option>
-       <option>Full time Job</option>
-       <option>Full time Learner</option>
-       <option>Prefer not to say</option>
-       <option>Other</option>
-       </select>
-      <br />
-<label>Would you recommend freeCodeCamp to a friend? </label>
-      <br>
-<input type="radio" name="radio" value ="radio"checked class="radio" />Definitely
-      <br>
-<input type="radio" name="radio" value="radio" class="radio" />Maybe
-      <br>
-<input type="radio" name="radio" value="radio" class="radio" />Not sure
-      <br>
-<label>What would you like to see improved? (Check all that apply)</label>
-      <br>
-<input type="checkbox" value="choice1" class="checkbox"> Front-end Projects
-      <br>
-<input type="checkbox" value="choice2" class="checkbox"/> Back-end Projects
-      <br>
-<input type="checkbox" value="choice3" class="checkbox"/> Data Visualization
-      <br>
-<input type="checkbox" value="choice4"class="checkbox"/> Challenges
-      <br>
-<input type="checkbox" value="choice5" class="checkbox"/> Open Source Community
-      <br>
-<input type="checkbox" value="choice6" class="checkbox"/> Gitter Help Rooms
-      <br>
-<input type="checkbox" value="choice7"class="checkbox"/> Videos
-      <br>
-<input type="checkbox" value="choice8"class="checkbox"/> City Meetups
-      <br>
-<input type="checkbox" value="choice9" class="checkbox" /> Wiki
-      <br>
-<input type="checkbox" value="choice10" class="checkbox"/> Forum
-      <br>
-<input type="checkbox" value="choice11" class="checkbox"/> Additional Courses
-      <br>
-
-<label>Any comments or suggestions?</label>
-      <br>
-<textarea placeholder="enter your comment or suggestion here ..." rows="4" cols="30"></textarea>
-      <br>
-<button id="submit">Submit</button>
-</form>
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Survey Form</title>
+      <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+      <div class="container">
+            <h1>Survey Form</h1>
+            <div class="introduction-text">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
+            <p>You know you want to.</p>
+            </div>
+      <form action="#" method="get">
+            <p>Let's do this!</p>
+            <label for="first-name">
+                  <input type="text" id="first-name" required>
+            </label>
+            <label for="last-name">
+                  <input type="text" id="last-name" required>
+            </label>
+            <label for="email">
+                  <input type="email" id="email" required>
+            </label>
+            <label for="phone-number">
+                  <input type="tel" id="phone-number" required>
+            </label>
+            <label for="password">
+                  <input type="password" id="password" required>
+            </label>
+            <label for="password-confirm">
+                  <input type="password" id="password-confirm" required>
+            </label>
+      </form>
+      <button type="submit">Create Account</button>
+      <p>Already have an account? <a href="#" target="_blank">Log in</a></p>
+      <figure>
+         <img src="assets/ducky-duck-logo.jpeg" alt="ducky-duck-logo">
+         <p>Ducky Duck</p>
+      <img src="assets/ducky-duck.jpg" alt="duck-duck">
+      <figcaption>Photo by <a href="https://unsplash.com/fr/@guy_wire">Guy Bianco IV</a> on <a href="https://unsplash.com">Unsplash</a></figcaption>
+      </figure>
+      </div>
+      
 </body>
 </html>
-
