@@ -114,3 +114,20 @@ button {
   text-align: left;
   margin-bottom:1.5rem;
 }
+
+input {
+  border:1px solid rgba(24, 153, 214, .15);
+}
+
+input:focus {
+  border: 1px solid rgba(24, 153, 214, .3);
+  box-shadow: 2px 2px ;
+}
+
+input:valid {
+  border:2px solid green;
+}
+
+form.submitted input:invalid {
+  border: 2px solid red;
+}
