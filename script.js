@@ -1,23 +1,31 @@
 
-const inputs = document.getElementById('form').elements;
+const inputs = form.elements;
+const form = document.getElementById('form');
 
 for (i = 0; i < inputs.length; i++) {
   inputs[i].addEventListener('invalid', function () {
-    document.getElementById('form').className = 'submitted';
+    form.className = 'submitted';
   });
 };
 
-function matchPassword() {
-  const pw1 = document.getElementById('password');
-  const pw2 = document.getElementById('password-confirm');
-  if (pw1 !== pw2) {
-    pw1.style.border = '2px solid red';
-    pw2.style.border = '2px solid red';
+function checkPassword() {
+  const password = document.getElementById('password').value;
+  const passwordConfirm = document.getElementById('password-confirm').value;
+  const passwordInput = document.getElementById('password');
+  const passwordConfirmInput = document.getElementById('password-confirm');
+  
+  if (password == passwordConfirm) {
+    passwordInput.style.borderColor = 'green';
+    passwordConfirmInput.style.borderColor = 'green';
+  } else if (password =! '' && passwordConfirm == ''){
+    return;
   } else {
-    pw1.style.border = '2px solid green';
-    pw2.style.border = '2px solid green';
+    passwordInput.style.borderColor = 'red';
+    passwordConfirmInput.style.borderColor = 'red';
   }
 }
+
+
 
 
 
