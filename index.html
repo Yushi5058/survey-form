@@ -20,7 +20,7 @@
             <p>You know you want to.</p>
             <p class="text-text">Let's do this!</p>
             </div>
-            <form id="form" class="form" action="#" method="get">
+            <form id="form" class="form" action="#" method="post">
             <label for="first-name">First Name</label>
                   <input type="text" pattern="^[A-Za-z]{1,15}$" id="first-name" required>
             <label for="last-name">Last Name</label>
@@ -30,9 +30,9 @@
             <label for="phone-number">Phone Number</label>
                   <input type="tel" pattern="[0-9]{10,10}$" id="phone-number" required>
             <label for="password">Password</label>
-                  <input " type="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" id="password" required>
+                  <input class="pw"  type="password" oninput="checkPassword()" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" id="password" required>
             <label for="password-confirm">Confirm Password</label>
-                  <input type="password" id="password-confirm" required>
+                  <input class="pw" type="password" oninput="checkPassword()" id="password-confirm" required>
                   <button class="btn" type="submit">Create Account</button>
       </form>
       <p class="acc-text">Already have an account? <a href="#" target="_blank">Log in</a></p>
