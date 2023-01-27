@@ -124,7 +124,7 @@ input:focus {
   box-shadow: 2px 2px ;
 }
 
-input:valid {
+#first-name:valid, #last-name:valid, #email:valid, #phone-number:valid {
   border:2px solid green;
 }
 
